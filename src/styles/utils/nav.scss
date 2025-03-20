@@ -2,9 +2,13 @@
   &__list {
     margin: 0;
     padding: 0;
-    display: flex;
     gap: 48px;
     list-style: none;
+    display: none;
+
+    @include on-small-desktop {
+      display: flex;
+    }
   }
 
   &__item {
@@ -13,5 +17,12 @@
     font-size: 13px;
     color: #fff;
     text-decoration: none;
+  }
+
+  &__menu--burger{
+    @include on-small-desktop {
+      display: none;
+    }
+
   }
 }

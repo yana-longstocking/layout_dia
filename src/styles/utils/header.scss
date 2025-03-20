@@ -6,6 +6,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include on-small-desktop {
+      @include page-grid {
+        column-gap: 1 / 2;
+      }
+    }
   }
 
   &__left {

@@ -1,4 +1,6 @@
 .nav {
+  flex-grow: 1;
+
   &__list {
     margin: 0;
     padding: 0;
@@ -20,8 +22,13 @@
   }
 
   &__menu--burger{
+    padding-inline: 32px;
     @include on-small-desktop {
       display: none;
     }
+  }
+
+  @include on-small-desktop {
+    flex-grow: 0;
   }
 }

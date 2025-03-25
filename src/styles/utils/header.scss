@@ -1,15 +1,12 @@
 .header {
-  background-color: #2c2c2c;
   padding-top: 49px;
+  background-color: #2c2c2c;
 
   &__inner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
-    @include on-small-desktop {
-      column-gap: 1 / 2;
-    }
+    justify-content: space-between;
+    margin-bottom: 165px;
   }
 
   &__left {
@@ -17,13 +14,14 @@
   }
 
   &__right {
-    font-family: Poppins, sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    color: #fff;
-    text-decoration: underline solid #2060f6;
-    text-underline-offset: 8px;
     border-radius: 4px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: $text-color;
+    text-decoration: underline solid #2060f6;
     text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
   }
 }

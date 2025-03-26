@@ -1,10 +1,12 @@
 .strategic-agency {
-  margin: 0;
+  @include page-grid;
+
+  padding-bottom: 205px;
 
   &__title {
     grid-column: 1 / -1;
 
-    margin-bottom: 32px;
+    padding-bottom: 32px;
 
     font-family: Poppins, sans-serif;
     font-size: 52px;
@@ -14,14 +16,14 @@
 
     @include on-tablet {
       grid-column: 1 / -1;
-      margin-bottom: 24px;
+      padding-bottom: 24px;
       font-size: 64px;
       line-height: 68px;
     }
 
     @include on-small-desktop {
       grid-column: 1 / 5;
-      margin-bottom: 32px;
+      padding-bottom: 32px;
     }
 
     @include on-the-design {
@@ -32,8 +34,7 @@
   &__description {
     grid-column: 1 / -1;
 
-    margin: 0;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
 
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -43,12 +44,12 @@
 
     @include on-tablet {
       grid-column: 1 / 5;
-      margin-bottom: 56px;
+      padding-bottom: 56px;
     }
 
     @include on-small-desktop {
       grid-column: 1 / 6;
-      margin-bottom: 83px;
+      padding-bottom: 83px;
     }
 
     @include on-the-design {
@@ -60,7 +61,6 @@
     grid-column: 1 / -1;
 
     height: 50px;
-    margin-bottom: 48px;
     border: 1px solid $color-line;
     border-radius: 8px;
 
@@ -75,7 +75,6 @@
 
     @include on-tablet {
       grid-column: 1 / 4;
-      margin-bottom: 147px;
     }
 
     @include on-small-desktop {

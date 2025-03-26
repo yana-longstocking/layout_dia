@@ -1,8 +1,16 @@
 .who-we-are {
+  @include page-grid;
+
+  padding: 120px 0;
+
+  @include on-tablet {
+    padding: 148px 0;
+  }
+
   &__title {
     grid-column: 1 / -1;
 
-    margin-bottom: 24px;
+    padding-bottom: 24px;
 
     font-family: Poppins, sans-serif;
     font-size: 32px;
@@ -13,7 +21,7 @@
 
     @include on-tablet {
       grid-column: 2 / 6;
-      margin-bottom: 16px;
+      padding-bottom: 16px;
     }
 
     @include on-small-desktop {
@@ -24,8 +32,6 @@
   &__description {
     grid-column: 1 / -1;
 
-    margin: 0 0 120px;
-
     font-family: 'Open Sans', sans-serif;
     font-size: 23px;
     font-weight: 600;
@@ -34,7 +40,6 @@
     text-align: center;
 
     @include on-tablet {
-      margin-bottom: 148px;
       font-size: 24px;
     }
 

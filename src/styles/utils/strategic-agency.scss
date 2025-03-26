@@ -2,21 +2,88 @@
   margin: 0;
 
   &__title {
+    grid-column: 1 / -1;
+
+    margin-bottom: 32px;
+
     font-family: Poppins, sans-serif;
-    font-size: 64px;
+    font-size: 52px;
     font-weight: 600;
-    line-height: 68px;
+    line-height: 120%;
     color: $text-color;
 
-    @include on-large-screens {
-      grid-column: 1 / 3;
+    @include on-tablet {
+      grid-column: 1 / -1;
+      margin-bottom: 24px;
+      font-size: 64px;
+      line-height: 68px;
+    }
+
+    @include on-small-desktop {
+      grid-column: 1 / 5;
+      margin-bottom: 32px;
+    }
+
+    @include on-the-design {
+      grid-column: 1 / 4;
     }
   }
 
   &__description {
+    grid-column: 1 / -1;
+
+    margin: 0;
+    margin-bottom: 72px;
+
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    line-height: 150%;
     color: $text-color;
+
+    @include on-tablet {
+      grid-column: 1 / 5;
+      margin-bottom: 56px;
+    }
+
+    @include on-small-desktop {
+      grid-column: 1 / 6;
+      margin-bottom: 83px;
+    }
+
+    @include on-the-design {
+      grid-column: 1 / 5;
+    }
+  }
+
+  &__button {
+    grid-column: 1 / -1;
+
+    height: 50px;
+    margin-bottom: 48px;
+    border: 1px solid $color-line;
+    border-radius: 8px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 100%;
+    color: $text-color;
+    text-align: center;
+
+    background-color: $color-line;
+
+    @include on-tablet {
+      grid-column: 1 / 4;
+      margin-bottom: 147px;
+    }
+
+    @include on-small-desktop {
+      grid-column: 1 / 5;
+    }
+
+    @include on-the-design {
+      grid-column: 1 / 4;
+    }
   }
 }

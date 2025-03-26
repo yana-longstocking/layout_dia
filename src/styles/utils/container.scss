@@ -24,4 +24,8 @@
     margin-inline: auto;
     padding-inline: 707px;
   }
+
+  &__grid {
+    @include page-grid;
+  }
 }

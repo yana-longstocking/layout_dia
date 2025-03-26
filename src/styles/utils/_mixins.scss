@@ -54,7 +54,7 @@
     column-gap: 24px;
   }
 
-  @include on-desktop {
+  @include on-small-desktop {
     --colums: 12;
   }
 }

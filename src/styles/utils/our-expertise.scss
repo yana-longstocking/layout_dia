@@ -28,18 +28,18 @@
   }
 
   &__card {
-    width: 268px;
-    margin: auto;
+    width: 211px;
+    margin: 0 auto;
     text-align: center;
 
     @include on-tablet {
       width: 343px;
-      margin: auto;
       text-align: center;
     }
 
     @include on-small-desktop {
-      width: 211px;
+      width: 268px;
+      margin: 0;
       text-align: center;
     }
   }

@@ -1,0 +1,122 @@
+.process {
+  &__wrapper {
+    @include page-grid;
+  }
+
+  &__inner-left {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include on-small-desktop {
+      grid-column: 1 / span 4;
+      grid-row: 1 / span 2;
+    }
+  }
+
+  &__inner-right {
+    @include on-small-desktop {
+      display: grid;
+      grid-column: 7 / span 6;
+      grid-row: 1 / span 2;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+    }
+  }
+
+  &__title {
+    padding-bottom: 16px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #c0cdd7;
+  }
+
+  &__title-text {
+    padding-bottom: 24px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+    color: $title-color;
+  }
+
+  &__description-text {
+    padding-bottom: 20px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+    color: $description-color;
+  }
+
+  &__description {
+    padding-bottom: 48px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+    color: $description-color;
+
+    @include on-tablet {
+      padding-bottom: 56px;
+    }
+  }
+
+  &__card {
+    width: 264px;
+    height: 264px;
+    border: 1px solid #25293108;
+    border-radius: 16px;
+
+    background-color: $text-color;
+  }
+
+  &__card-one {
+    @include on-small-desktop {
+      grid-column: 1 / span 3;
+      grid-row: 1;
+    }
+  }
+
+  &__tile-index {
+    width: 10px;
+    height: 10px;
+    padding: 32px 0 24px 32px;
+    border-radius: 23px;
+
+    color: $color-line;
+
+    opacity: 10%;
+    background-color: $color-line;
+  }
+
+  &__card-two {
+    @include on-small-desktop {
+      grid-column: 4 / span 3;
+      grid-row: 1;
+    }
+  }
+
+  &__card-three {
+    @include on-small-desktop {
+      grid-column: 1 / span 3;
+      grid-row: 2;
+    }
+  }
+
+  &__card-four {
+    @include on-the-design {
+      grid-column: 4 / span 3;
+      grid-row: 2;
+    }
+  }
+}

@@ -7,7 +7,7 @@
     grid-column: 1 / -1;
 
     @include on-tablet {
-      grid-column: 1 / span 4;
+      grid-column: 1 / span 3;
     }
 
     @include on-small-desktop {
@@ -84,19 +84,18 @@
     margin-bottom: 24px;
 
     @include on-tablet {
-      grid-column: 1 / span 4;
+      grid-column: 1 / 4;
     }
 
     @include on-small-desktop {
       grid-column: 1 / span 3;
-      grid-row: 1;
     }
   }
 
   &__tile-index {
     display: inline-block;
 
-    margin: 32px;
+    margin: 32px 24px 0;
     padding: 2px 12px;
     border-radius: 23px;
 
@@ -109,7 +108,8 @@
     background-color: rgba(32, 96, 246, 0.1);
   }
 
-  &__tile-description {
+  &__list {
+    margin: 0;
     padding: 26px 32px 32px;
 
     font-family: 'Open Sans', sans-serif;
@@ -117,6 +117,7 @@
     font-weight: 600;
     line-height: 150%;
     color: $description-color;
+    list-style: none;
   }
 
   &__box {
@@ -137,6 +138,10 @@
   &__card-two {
     margin-bottom: 24px;
 
+    @include on-tablet {
+      grid-column: 5 / 7;
+    }
+
     @include on-small-desktop {
       transform: translateY(-50%);
       grid-column: 4 / span 3;
@@ -147,6 +152,11 @@
   &__card-three {
     margin-bottom: 24px;
 
+    @include on-tablet {
+      grid-column: 1 / 5;
+      grid-row: 2;
+    }
+
     @include on-small-desktop {
       grid-column: 1 / span 3;
       grid-row: 2;
@@ -155,6 +165,11 @@
 
   &__card-four {
     margin-bottom: 120px;
+
+    @include on-tablet {
+      grid-column: 4 / 3;
+      grid-row: 2;
+    }
 
     @include on-small-desktop {
       transform: translateY(-50%);

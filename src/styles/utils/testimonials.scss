@@ -29,6 +29,7 @@
 
   &__wrapper {
     padding: 48px 0 120px;
+    text-align: center;
 
     @include on-tablet {
       padding: 56px 0 148px;
@@ -38,21 +39,89 @@
       display: flex;
       gap: 30;
       justify-content: space-between;
-
       padding: 85px 0 186px;
-
-      text-align: center;
     }
 
     @include on-the-design {
       padding: 85px 0 148px;
     }
+  }
 
-    &__card {
-      box-sizing: border-box;
-      border: 1px solid #25293108;
-      border-radius: 16px;
-      background-color: $text-color;
+  &__card {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    padding: 32px 42px;
+    border: 1px solid #25293108;
+    border-radius: 16px;
+
+    background-color: $text-color;
+
+    @include on-tablet {
+      margin-bottom: 30px;
     }
+
+    @include on-tablet {
+      padding: 32px 98px;
+    }
+
+    @include on-small-desktop {
+      width: 292px;
+      padding: 32px 48px;
+    }
+
+    @include on-desktop {
+      width: 362px;
+    }
+  }
+
+  &__photo {
+    width: 110px;
+    margin-bottom: 24px;
+  }
+
+  &__quotation-marks {
+    padding-bottom: 8px;
+
+    @include on-tablet {
+      padding-bottom: 16px;
+    }
+
+    @include on-small-desktop {
+      padding-bottom: 8px;
+    }
+  }
+
+  &__description {
+    padding-bottom: 32px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 150%;
+    color: $description-color;
+
+    @include on-tablet {
+      padding-bottom: 16px;
+    }
+  }
+
+  &__name {
+    padding-bottom: 4px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 150%;
+    color: $title-color;
+  }
+
+  &__specialty {
+    padding-bottom: 32px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 100%;
+    color: $description-color;
   }
 }

@@ -36,9 +36,11 @@
     }
 
     @include on-small-desktop {
-      display: flex;
-      gap: 30;
-      justify-content: space-between;
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+
       padding: 85px 0 186px;
     }
 
@@ -48,9 +50,8 @@
   }
 
   &__card {
-    box-sizing: border-box;
     margin-bottom: 24px;
-    padding: 32px 42px;
+    padding: 75px 42px 32px;
     border: 1px solid #25293108;
     border-radius: 16px;
 
@@ -58,25 +59,52 @@
 
     @include on-tablet {
       margin-bottom: 30px;
-    }
-
-    @include on-tablet {
-      padding: 32px 98px;
+      padding: 87px 98px 32px;
     }
 
     @include on-small-desktop {
-      width: 292px;
-      padding: 32px 48px;
+      margin-bottom: 0;
+      padding: 75px 48px 32px;
     }
 
-    @include on-desktop {
-      width: 362px;
+    @include on-the-design {
+      padding: 87px 48px 32px;
     }
   }
 
   &__photo {
+    position: relative;
     width: 110px;
-    margin-bottom: 24px;
+    margin-bottom: 67px;
+
+    @include on-tablet {
+      margin-bottom: 79px;
+    }
+  }
+
+  &__avatar-frame {
+    position: absolute;
+    transform: rotate(-60deg);
+
+    width: 109px;
+    height: 44px;
+    border-radius: 12px;
+
+    background-color: $color-line;
+
+    &--left {
+      right: 36px;
+    }
+
+    &--right {
+      top: 65px;
+      left: 40px;
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+    display: inline-block;
   }
 
   &__quotation-marks {
@@ -122,6 +150,10 @@
     font-size: 13px;
     font-weight: 700;
     line-height: 100%;
-    color: $description-color;
+    color: #c0cdd7;
+
+    @include on-small-desktop {
+      padding-bottom: 0;
+    }
   }
 }

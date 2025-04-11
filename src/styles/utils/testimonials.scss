@@ -50,6 +50,10 @@
   }
 
   &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     margin-bottom: 24px;
     padding: 75px 42px 32px;
     border: 1px solid #25293108;

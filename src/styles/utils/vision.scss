@@ -63,6 +63,8 @@
   }
 
   &__button {
+    cursor: pointer;
+
     grid-column: 1 / -1;
 
     height: 56px;

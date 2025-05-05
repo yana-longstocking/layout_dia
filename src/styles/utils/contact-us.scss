@@ -65,8 +65,18 @@
     opacity: 50%;
   }
 
-  &__follow-us-icons {
+  &__follow-us {
     display: flex;
     gap: 32px;
+    padding-bottom: 81px;
+
+    @include on-tablet {
+      padding-bottom: 139px;
+    }
+  }
+
+  &__follow-us-icons:hover {
+    display: inline-block;
+    background-color: $color-button;
   }
 }

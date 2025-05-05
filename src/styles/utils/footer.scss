@@ -17,19 +17,17 @@
   }
 
   &__list {
-    @include on-tablet {
-      display: flex;
-    }
-  }
-
-  &__list-box {
     margin: 0;
     padding: 0;
     list-style: none;
 
-    @include on-small-desktop {
+    @include on-tablet {
       display: flex;
-      gap: 64px;
+      justify-content: space-between;
+
+      @include on-small-desktop {
+        gap: 64px;
+      }
     }
   }
 

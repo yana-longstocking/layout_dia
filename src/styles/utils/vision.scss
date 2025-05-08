@@ -65,7 +65,10 @@
   &__button {
     cursor: pointer;
 
+    display: flex;
     grid-column: 1 / -1;
+    align-items: center;
+    justify-content: center;
 
     height: 56px;
     border: 1px solid $color-line;
@@ -76,12 +79,11 @@
     font-weight: 600;
     line-height: 100%;
     color: $text-color;
-    text-align: center;
+    text-decoration: none;
 
     background-color: $color-line;
 
     @include on-tablet {
-      display: block;
       width: 264px;
       margin: 0 auto;
     }

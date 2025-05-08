@@ -6,6 +6,29 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="./site.webmanifest"
+    />
+
     <title>Air</title>
     <link
       rel="stylesheet"
@@ -74,7 +97,7 @@
           <div>
             <a
               class="header__right"
-              href="#hire us"
+              href="#hire-us"
             >
               Hire us
             </a>
@@ -387,7 +410,12 @@
                 We are sure that first-rate job is possible only if all three
                 components are united.
               </p>
-              <button class="vision__button">Apply</button>
+              <a
+                href="#apply"
+                class="vision__button"
+              >
+                Apply
+              </a>
             </div>
           </section>
         </div>
@@ -396,10 +424,16 @@
       <article class="box">
         <div class="container">
           <section class="box__grid">
-            <div class="send-us-message">
+            <div
+              class="send-us-message"
+              id="hire-us"
+            >
               <h2 class="send-us-message__title">Send us a message</h2>
 
-              <div class="send-us-message__form">
+              <div
+                class="send-us-message__form"
+                id="apply"
+              >
                 <form onsubmit="this.reset(); return false;">
                   <input
                     type="email"

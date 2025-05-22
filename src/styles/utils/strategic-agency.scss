@@ -43,7 +43,7 @@
     color: $text-color;
 
     @include on-tablet {
-      grid-column: 1 / 5;
+      grid-column: 1 / 4;
       padding-bottom: 56px;
     }
 

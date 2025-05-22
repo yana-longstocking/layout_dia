@@ -1,6 +1,16 @@
 .contact-us {
   grid-column: 1 / -1;
 
+  &:hover {
+    animation: color $effect-duration linear;
+
+    @keyframes color {
+      from {
+        color: $color;
+      }
+    }
+  }
+
   @include on-small-desktop {
     grid-column: 8 / -1;
   }

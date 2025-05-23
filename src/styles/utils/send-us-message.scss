@@ -45,7 +45,11 @@
     }
 
     &:is(:-webkit-autofill, :autofill) {
-      border: none;
+      border-top: none;
+      border-right: none;
+      border-bottom: 1px solid $color-button;
+      border-left: none;
+
       -webkit-box-shadow: 0 0 0 30px $background-color inset !important;
 
       -webkit-text-fill-color: $text-color !important;
@@ -79,7 +83,11 @@
     }
 
     &:is(:-webkit-autofill, :autofill) {
-      border: none;
+      border-top: none;
+      border-right: none;
+      border-bottom: 1px solid $color-button;
+      border-left: none;
+
       -webkit-box-shadow: 0 0 0 30px $background-color inset !important;
 
       -webkit-text-fill-color: $text-color !important;

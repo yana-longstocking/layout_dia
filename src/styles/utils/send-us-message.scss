@@ -58,13 +58,15 @@
     width: 100%;
     margin-bottom: 56px;
     border: none;
+    border-bottom: 1px solid $text-color;
 
     font-family: Poppins, sans-serif;
     font-size: 15px;
     font-weight: 600;
-    line-height: 100%;
+    line-height: 15px;
     color: $text-color;
 
+    background-color: $background-color;
     outline: none !important;
 
     @include on-tablet {
@@ -73,7 +75,7 @@
 
     &:hover {
       border: none;
-      border-bottom: 1px solid #144ed4;
+      border-bottom: 1px solid $color-button;
     }
 
     &:is(:-webkit-autofill, :autofill) {

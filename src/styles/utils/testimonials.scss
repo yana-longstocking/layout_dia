@@ -50,11 +50,13 @@
   }
 
   &__card {
+    @include transition-mixin;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     padding: 75px 42px 32px;
     border: 1px solid #25293108;
     border-radius: 16px;
@@ -62,7 +64,6 @@
     background-color: $text-color;
 
     @include on-tablet {
-      margin-bottom: 30px;
       padding: 87px 98px 32px;
     }
 

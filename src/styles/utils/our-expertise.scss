@@ -45,6 +45,8 @@
   }
 
   &__photo {
+    @include transition-mixin;
+
     margin-bottom: 32px;
     border-radius: 20px;
 

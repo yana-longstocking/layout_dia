@@ -80,6 +80,7 @@
     &:hover {
       border: none;
       border-bottom: 1px solid $color-button;
+      line-height: 15px;
     }
 
     &:is(:-webkit-autofill, :autofill) {

@@ -36,7 +36,7 @@
     font-size: 13px;
     font-weight: 700;
     line-height: 100%;
-    color: #c0cdd7;
+    color: $color-medium-title;
   }
 
   &__title-text {
@@ -83,6 +83,9 @@
   &__card-one {
     grid-column: 1 / -1;
     margin-bottom: 24px;
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @include on-tablet {
       grid-area: 1 / 1;
@@ -139,6 +142,10 @@
   &__card-two {
     margin-bottom: 24px;
 
+    &:hover {
+      transform: translateY(-50%) scale(1.05);
+    }
+
     @include on-tablet {
       transform: translateY(-50%);
       grid-area: 1 / 2;
@@ -153,6 +160,9 @@
 
   &__card-three {
     margin-bottom: 24px;
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @include on-tablet {
       grid-area: 2 / 1;
@@ -166,6 +176,10 @@
 
   &__card-four {
     margin-bottom: 120px;
+
+    &:hover {
+      transform: translateY(-50%) scale(1.05);
+    }
 
     @include on-tablet {
       transform: translateY(-50%);

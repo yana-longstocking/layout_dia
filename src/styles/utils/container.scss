@@ -1,4 +1,7 @@
 .container {
+  max-width: 1600px;
+  margin-inline: auto;
+
   @include on-mobile {
     padding-inline: 20px;
   }

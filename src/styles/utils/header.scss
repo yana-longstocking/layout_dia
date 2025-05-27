@@ -1,29 +1,24 @@
 .header {
-  padding-top: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
   background-color: $background-color;
-
-  @include on-tablet {
-    padding-top: 21px;
-  }
-
-  @include on-small-desktop {
-    padding-top: 49px;
-  }
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 49px;
 
     @include on-tablet {
-      padding-bottom: 57px;
+      padding-top: 21px;
+
+      // padding-bottom: 57px;
+      padding-bottom: 21px;
     }
 
     @include on-small-desktop {
-      padding-bottom: 165px;
+      // padding-bottom: 165px;
+      padding-top: 49px;
+      padding-bottom: 49px;
     }
   }
 
@@ -42,5 +37,6 @@
     text-decoration: underline solid $color-line;
     text-decoration-thickness: 2px;
     text-underline-offset: 8px;
+    text-transform: uppercase;
   }
 }

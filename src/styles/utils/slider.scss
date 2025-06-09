@@ -16,14 +16,15 @@
     }
   }
 
-  &__arrows {
+  &__controls {
     position: absolute;
     bottom: 78px;
     left: 21px;
 
     display: flex;
-    gap: 15px;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
 
     @include on-tablet {
       left: 41px;
@@ -31,6 +32,29 @@
 
     @include on-small-desktop {
       left: 61px;
+      flex-direction: row;
+      gap: 15px;
+      align-items: center;
+    }
+  }
+
+  &__arrows {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  &__text {
+    @include on-mobile {
+      margin-top: 0;
+    }
+
+    @include on-tablet {
+      margin-left: 0;
+    }
+
+    @include on-small-desktop {
+      margin-left: 0;
     }
   }
 

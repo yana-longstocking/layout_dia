@@ -120,25 +120,98 @@
                 Learn more
               </a>
             </div>
-            <div class="strategic-agency__slider slider">
-              <img
-                src="./images/slider/slide-1.png"
-                class="slider__image"
-                alt="main-photo"
+            <div
+              class="strategic-agency__slider slider"
+              data-slides="3"
+            >
+              <!-- Radio buttons for slide control -->
+              <input
+                type="radio"
+                id="slide1"
+                name="slider"
+                class="slider__radio"
+                checked
               />
+              <input
+                type="radio"
+                id="slide2"
+                name="slider"
+                class="slider__radio"
+              />
+              <input
+                type="radio"
+                id="slide3"
+                name="slider"
+                class="slider__radio"
+              />
+
+              <!-- Slides container -->
+              <div class="slider__slides">
+                <div class="slider__slide">
+                  <img
+                    src="./images/slider/slide-1.png"
+                    class="slider__image"
+                    alt="slide-1"
+                  />
+                </div>
+                <div class="slider__slide">
+                  <img
+                    src="./images/slider/slide-2.png"
+                    class="slider__image"
+                    alt="slide-2"
+                  />
+                </div>
+                <div class="slider__slide">
+                  <img
+                    src="./images/slider/slide-3.png"
+                    class="slider__image"
+                    alt="slide-3"
+                  />
+                </div>
+              </div>
+
+              <!-- Navigation controls -->
               <div class="slider__controls">
                 <div class="slider__arrows">
-                  <img
-                    src="./images/slider/arrow-left.svg"
-                    alt="arrow-left"
-                    class="slider__arrow-left"
-                  />
+                  <!-- Previous arrow -->
+                  <div class="slider__arrow slider__arrow--prev">
+                    <label
+                      for="slide3"
+                      class="slider__nav"
+                    ></label>
+                    <label
+                      for="slide1"
+                      class="slider__nav"
+                    ></label>
+                    <label
+                      for="slide2"
+                      class="slider__nav"
+                    ></label>
+                    <img
+                      src="./images/slider/arrow-left.svg"
+                      alt="Previous slide"
+                    />
+                  </div>
 
-                  <img
-                    src="./images/slider/arrow-right.svg"
-                    alt="arrow-right"
-                    class="slider__arrow-right"
-                  />
+                  <!-- Next arrow -->
+                  <div class="slider__arrow slider__arrow--next">
+                    <label
+                      for="slide2"
+                      class="slider__nav"
+                    ></label>
+                    <label
+                      for="slide3"
+                      class="slider__nav"
+                    ></label>
+                    <label
+                      for="slide1"
+                      class="slider__nav"
+                    ></label>
+                    <img
+                      src="./images/slider/arrow-right.svg"
+                      alt="Next slide"
+                    />
+                  </div>
                 </div>
 
                 <div class="slider__text">

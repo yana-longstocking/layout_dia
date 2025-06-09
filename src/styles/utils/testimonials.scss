@@ -51,8 +51,6 @@
   }
 
   &__card {
-    @include transition-mixin;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -71,6 +69,8 @@
     @include on-small-desktop {
       margin-bottom: 0;
       padding: 75px 48px 32px;
+
+      @include transition-mixin;
     }
 
     @include on-the-design {

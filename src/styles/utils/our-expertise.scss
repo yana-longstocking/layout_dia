@@ -45,12 +45,12 @@
   }
 
   &__photo {
-    @include transition-mixin;
-
     margin-bottom: 32px;
     border-radius: 20px;
 
     @include on-small-desktop {
+      @include transition-mixin;
+
       margin-bottom: 40px;
     }
   }

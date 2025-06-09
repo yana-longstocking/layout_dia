@@ -8,17 +8,16 @@
     align-items: center;
     justify-content: space-between;
 
-    @include on-tablet {
-      padding-top: 21px;
+    padding-top: 21px;
+    padding-bottom: 49px;
 
-      // padding-bottom: 57px;
-      padding-bottom: 21px;
+    @include on-tablet {
+      padding-bottom: 57px;
     }
 
     @include on-small-desktop {
-      // padding-bottom: 165px;
-      padding-top: 49px;
-      padding-bottom: 49px;
+      padding-top: 48px;
+      padding-bottom: 45px;
     }
   }
 

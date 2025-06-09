@@ -12,41 +12,47 @@
   &__wrapper {
     @include page-grid;
 
-    height: 680px;
-    padding-left: 21px;
-
-    @include on-tablet {
-      padding-left: 41px;
-    }
-
     @include on-small-desktop {
+      height: 680px;
       padding-left: 54px;
     }
 
     @include on-the-design {
       padding-left: 227px;
     }
-
   }
 
   &__left {
     grid-column: 1 / -1;
+    margin-bottom: 48px;
+    padding-right: 21px;
+    padding-left: 21px;
 
     @include on-tablet {
-      grid-column: 1 / 5;
+      grid-column: 1 / -1;
+      margin-bottom: 147px;
+      padding-right: 41px;
+      padding-left: 41px;
     }
 
     @include on-small-desktop {
       grid-column: 1 / 6;
       padding-top: 116px;
+      padding-left: 0;
     }
 
     @include on-desktop {
+      grid-column: 1 / 5;
+    }
+
+    @include on-the-design {
       grid-column: 1 / 4;
     }
   }
 
   &__slider {
+    grid-column: 1 / -1;
+
     @include on-small-desktop {
       grid-column: 7 / -1;
     }
@@ -82,6 +88,7 @@
     color: $text-color;
 
     @include on-tablet {
+      width: 362px;
       padding-bottom: 56px;
     }
 

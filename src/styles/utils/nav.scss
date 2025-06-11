@@ -111,7 +111,7 @@
   &__burger {
     cursor: pointer;
     display: flex;
-    padding: 8px;
+    padding-left: 35px;
 
     @include on-small-desktop {
       display: none;

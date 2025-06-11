@@ -51,6 +51,12 @@
             />
           </a>
           <nav class="nav">
+            <input
+              type="checkbox"
+              id="menu-toggle"
+              class="nav__checkbox"
+            />
+
             <ul class="nav__list">
               <li>
                 <a
@@ -84,15 +90,27 @@
                   Contact Us
                 </a>
               </li>
+
+              <li class="nav__close">
+                <label
+                  for="menu-toggle"
+                  class="nav__close-btn"
+                >
+                  ×
+                </label>
+              </li>
             </ul>
 
-            <a href="#menu">
+            <label
+              for="menu-toggle"
+              class="nav__burger"
+            >
               <img
                 src="./images/icons/burger-menu.svg"
                 alt="burger-menu"
-                class="nav__menu--burger"
+                class="nav__burger-icon"
               />
-            </a>
+            </label>
           </nav>
           <div>
             <a

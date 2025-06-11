@@ -43,5 +43,15 @@
     color: $text-color;
     text-decoration: none;
     text-transform: uppercase;
+
+    &:hover {
+      animation: color $effect-duration linear;
+
+      @keyframes color {
+        from {
+          color: $color-button;
+        }
+      }
+    }
   }
 }

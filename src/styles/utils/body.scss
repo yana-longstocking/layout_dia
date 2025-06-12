@@ -12,3 +12,13 @@ p {
   margin: 0;
   padding: 0;
 }
+
+body {
+  &:has(.nav__target:target) {
+    overflow: hidden;
+
+    @include on-small-desktop {
+      overflow: auto;
+    }
+  }
+}

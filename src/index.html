@@ -51,11 +51,11 @@
             />
           </a>
           <nav class="nav">
-            <input
-              type="checkbox"
+            <!-- Target anchor for menu state -->
+            <div
               id="menu-toggle"
-              class="nav__checkbox"
-            />
+              class="nav__target"
+            ></div>
 
             <ul class="nav__list">
               <li>
@@ -63,7 +63,7 @@
                   class="nav__item"
                   href="#about-us"
                 >
-                  <label for="menu-toggle">About us</label>
+                  About us
                 </a>
               </li>
               <li>
@@ -71,7 +71,7 @@
                   class="nav__item"
                   href="#services"
                 >
-                  <label for="menu-toggle">Services</label>
+                  Services
                 </a>
               </li>
               <li>
@@ -79,7 +79,7 @@
                   class="nav__item"
                   href="#testimonials"
                 >
-                  <label for="menu-toggle">Testimonials</label>
+                  Testimonials
                 </a>
               </li>
               <li>
@@ -87,22 +87,22 @@
                   class="nav__item"
                   href="#contact-us"
                 >
-                  <label for="menu-toggle">Contact Us</label>
+                  Contact Us
                 </a>
               </li>
 
               <li class="nav__close">
-                <label
-                  for="menu-toggle"
+                <a
+                  href="#"
                   class="nav__close-btn"
                 >
                   ×
-                </label>
+                </a>
               </li>
             </ul>
 
-            <label
-              for="menu-toggle"
+            <a
+              href="#menu-toggle"
               class="nav__burger"
             >
               <img
@@ -110,7 +110,7 @@
                 alt="burger-menu"
                 class="nav__burger-icon"
               />
-            </label>
+            </a>
           </nav>
           <div>
             <a
